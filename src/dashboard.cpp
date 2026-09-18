@@ -34,15 +34,15 @@ void Dashboard::mostrar(const ECU& ecu) const
 
     std::cout << std::fixed << std::setprecision(2);
 
-    std::cout << "Velocidad       :" << ecu.obtenerSensorVelocidad().obtenerValor() << " km/h\n";
-    std::cout << "RPM             :" << ecu.obtenerSensorRPM().obtenerValor() << " rev/min\n";
-    std::cout << "Temperatura     :" << ecu.obtenerSensorTemperatura().obtenerValor() << " C\n";
-    std::cout << "Bateria         :" << ecu.obtenerSensorBateria().obtenerValor() << " V\n";
-    std::cout << "Presion aceite  :" << ecu.obtenerSensorPresionAceite().obtenerValor() << " psi\n";
+    std::cout << "Velocidad       : " << ecu.obtenerSensorVelocidad().obtenerValor() << ecu.obtenerSensorVelocidad().obtenerUnidad() <<"\n";
+    std::cout << "RPM             : " << ecu.obtenerSensorRPM().obtenerValor() << ecu.obtenerSensorRPM().obtenerUnidad() <<"\n";
+    std::cout << "Temperatura     : " << ecu.obtenerSensorTemperatura().obtenerValor() << ecu.obtenerSensorTemperatura().obtenerUnidad() <<"\n";
+    std::cout << "Bateria         : " << ecu.obtenerSensorBateria().obtenerValor() << ecu.obtenerSensorBateria().obtenerUnidad() <<"\n";
+    std::cout << "Presion aceite  : " << ecu.obtenerSensorPresionAceite().obtenerValor() << ecu.obtenerSensorPresionAceite().obtenerUnidad() <<"\n";
 
     std::cout << "---------------------------------------------\n";
 
-    std::cout << "Estado ECU      :" << estadoAtexto(ecu.obtenerEstado()) << "\n";
+    std::cout << "Estado ECU      : " << estadoAtexto(ecu.obtenerEstado()) << "\n";
 
     std::cout << "=============================================\n\n";
 }

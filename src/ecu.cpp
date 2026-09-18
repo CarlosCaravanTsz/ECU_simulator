@@ -4,11 +4,11 @@ ECU::ECU()
 
 :
 
-velocidad("Velocidad", "km/h", 0.0, 220.0),
-rpm("RPM", "rpm", 600.0, 7000.0),
-temperatura("Temperatura", "C", -20.0, 110.0),
-bateria("Bateria", "V", 11.5, 15.0),
-presionAceite("Presion aceite", "psi", 0.8, 6.0),
+velocidad("Velocidad", " km/h", 0.0, 220.0),
+rpm("RPM", " rpm", 600.0, 7000.0),
+temperatura("Temperatura", " C", -20.0, 110.0),
+bateria("Bateria", " V", 11.5, 15.0),
+presionAceite("Presion aceite", " psi", 0.8, 6.0),
 
 estado(EstadoECU::INIT)
 {
