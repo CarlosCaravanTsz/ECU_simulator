@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
 
 const std::string Dashboard::estadoAtexto(EstadoECU estado) const
 {
@@ -26,7 +27,7 @@ const std::string Dashboard::estadoAtexto(EstadoECU estado) const
 
 void Dashboard::mostrar(const ECU& ecu) const
 {
-    std::cout << "\033[2J\033[H";
+    system("clear");
 
     std::cout << "=============================================\n";
     std::cout << "             ECU VEHICLE DASHBOARD           \n";
