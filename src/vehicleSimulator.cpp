@@ -83,3 +83,7 @@ double VehicleSimulator::obtenerVoltaje() const {
 double VehicleSimulator::obtenerPresion() const {
     return presionAceite;
 }
+
+double VehicleSimulator::obtenerAcelerador() const {
+    return acelerador;
+}

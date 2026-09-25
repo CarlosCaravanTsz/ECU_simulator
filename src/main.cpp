@@ -29,6 +29,9 @@ int main(){
 
         Dashboard.mostrar(ecu);
 
+        std::cout << "---------------------------------------------\n";
+        std::cout << simulador.obtenerAcelerador() << "\n";
+
         std::this_thread::sleep_for(std::chrono::milliseconds(200));
     }
     

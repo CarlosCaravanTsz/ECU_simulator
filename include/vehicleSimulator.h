@@ -36,4 +36,6 @@ class VehicleSimulator {
 
         double obtenerPresion() const;
 
+        double obtenerAcelerador() const;
+
 };

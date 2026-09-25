@@ -23,6 +23,10 @@ class Sensor {
 
         double obtenerValor() const;
 
+        double obtenerMinimo() const;
+         
+        double obtenerMaximo() const;
+
         std::string obtenerNombre() const;
 
         std::string obtenerUnidad() const;

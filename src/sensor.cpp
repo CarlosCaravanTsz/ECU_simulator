@@ -30,6 +30,14 @@ double Sensor::obtenerValor() const {
     
 }
 
+double Sensor::obtenerMinimo() const{
+    return minimo;
+}
+
+double Sensor::obtenerMaximo() const{
+    return maximo;
+}
+
 std::string Sensor::obtenerNombre() const {
 
     return nombre;
