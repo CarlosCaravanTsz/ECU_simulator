@@ -1,14 +1,21 @@
 #pragma once
 
+#include <map>
+#include <string>
+
 #include "/home/oscarg/ECU_Simulator_7-8/include/ecu.h"
 
 class Dashboard {
 
     private:
 
-        const std::string estadoAtexto(EstadoECU estado) const;
+        std::map<EstadoECU, std::string> nombresEstados;
+
+        void mostrarBarra(double valor, double minimo, double maximo, int ancho) const;
 
     public:
+
+        Dashboard();
 
         void mostrar(const ECU& ecu) const;
 
