@@ -1,4 +1,4 @@
-#include "/home/oscarg/ECU_Simulator_7-8/include/sensor.h"
+#include "sensor.h"
 
 
 Sensor::Sensor(

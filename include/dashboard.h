@@ -3,7 +3,7 @@
 #include <map>
 #include <string>
 
-#include "/home/oscarg/ECU_Simulator_7-8/include/ecu.h"
+#include "ecu.h"
 
 class Dashboard {
 

@@ -1,4 +1,4 @@
-#include "/home/oscarg/ECU_Simulator_7-8/include/dashboard.h"
+#include "dashboard.h"
 
 #include <iostream>
 #include <iomanip>

@@ -1,6 +1,6 @@
 #include <algorithm>
 
-#include "/home/oscarg/ECU_Simulator_7-8/include/vehicleSimulator.h"
+#include "vehicleSimulator.h"
 
 VehicleSimulator::VehicleSimulator(
         unsigned int semilla) 

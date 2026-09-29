@@ -2,9 +2,9 @@
 #include <chrono>
 #include <thread>
 
-#include "/home/oscarg/ECU_Simulator_7-8/include/ecu.h"
-#include "/home/oscarg/ECU_Simulator_7-8/include/vehicleSimulator.h"
-#include "/home/oscarg/ECU_Simulator_7-8/include/dashboard.h"
+#include "ecu.h"
+#include "vehicleSimulator.h"
+#include "dashboard.h"
 
 
 int main(){
@@ -30,7 +30,7 @@ int main(){
         Dashboard.mostrar(ecu);
 
         std::cout << "---------------------------------------------\n";
-        std::cout << simulador.obtenerAcelerador() << "\n";
+        std::cout << "Acelerador: " << simulador.obtenerAcelerador() << " %\n";
 
         std::this_thread::sleep_for(std::chrono::milliseconds(200));
     }
